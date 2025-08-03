@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="it, arztpraxis, software, lübeck, praxissoftware, homepage, arzt, praxis, dienstleistung">
+    <title>kaihag.</title>
+    <style>
+        /* lora-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/lora-v36-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* lora-italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Lora';
+  font-style: italic;
+  font-weight: 400;
+  src: url('fonts/lora-v36-latin-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* lora-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 500;
+  src: url('fonts/lora-v36-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* lora-500italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Lora';
+  font-style: italic;
+  font-weight: 500;
+  src: url('fonts/lora-v36-latin-500italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* lora-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 600;
+  src: url('fonts/lora-v36-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* lora-600italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Lora';
+  font-style: italic;
+  font-weight: 600;
+  src: url('fonts/lora-v36-latin-600italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* lora-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 700;
+  src: url('fonts/lora-v36-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* lora-700italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Lora';
+  font-style: italic;
+  font-weight: 700;
+  src: url('fonts/lora-v36-latin-700italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+        .font-title {
+            font-family: "Lora", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            size: 2.5rem;
+        }
+
+        .font-logo {
+            font-family: "Lora", serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: bold;
+        }
+
+        /* --- General & Reset Styles --- */
+        :root {
+            --primary-color: #000; /* A professional blue */
+            --secondary-color: #000; /* Dark gray for text */
+            --background-light: #F7FAFC; /* Light gray for sections */
+            --white-color: #FFFFFF;
+            --border-color: #E2E8F0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "Lora", serif;
+            line-height: 1.6;
+            color: var(--secondary-color);
+        }
+
+        /* --- Layout Container --- */
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 4rem 0;
+        }
+
+        /* --- Header & Navigation --- */
+        .main-header {
+            background: var(--white-color);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .main-header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0;
+            width: 90%;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .main-nav ul {
+            display: flex;
+            list-style-type: none;
+        }
+
+        .main-nav a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .main-nav a:hover {
+            color: var(--primary-color);
+        }
+
+        /* --- Hero Section --- */
+        .hero {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 85vh;
+            color: var(--white-color);
+            background-image: url('hero-1.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .mid-luebeck {
+            background-image: url('luebeck-1.jpg');
+
+        }
+
+        .hero-title-1 {
+            font-size: 3.5rem;
+            margin-bottom: 0.5rem;
+            margin-right: 20rem;
+        }
+
+        .hero-title-2 {
+            font-size: 3.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero-title-3 {
+            font-size: 2rem;
+            margin-left: 20rem;
+        }
+
+        /* --- Section Styles --- */
+        section {
+            padding: 4rem 0;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #000;
+        }
+
+        section h3 {
+            text-align: center;
+            font-size: 1.5rem;
+            color: #000;
+        }
+        
+        #mission {
+            background-color: var(--background-light);
+        }
+
+        .mission-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        /* --- Contact Form --- */
+        #contact {
+            background-color: var(--white-color);
+        }
+
+        .contact-form {
+            max-width: 700px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #000;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid var(--border-color);
+            border-radius: 5px;
+            font-size: 1rem;
+            font-family: inherit;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        .submit-btn {
+            font-family: "Lora", serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            display: block;
+            width: 100%;
+            padding: 1rem;
+            background-color: var(--primary-color);
+            color: var(--white-color);
+            border: 1px solid var(--primary-color);
+            border-radius: 5px;
+            font-size: 1.1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: var(--white-color);
+            color: var(--primary-color);
+            border: 1px solid var(--primary-color);
+        }
+
+        .contact-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .contact-content a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        /* --- Footer --- */
+        footer {
+            background-color: #000;
+            color: var(--background-light);
+            text-align: center;
+            padding: 2rem 0;
+        }
+        
+        /* --- Responsive Design --- */
+        @media (max-width: 768px) {
+            .hero-title-1 {
+                font-size: 2.5rem;
+                margin-right: 0;
+            }
+            .hero-title-2 {
+                font-size: 2.5rem;
+            }
+            .hero-title-3 {
+                font-size: 1.2rem;
+                margin-left: 0;
+            }
+            section h2 {
+                font-size: 2rem;
+            }
+            .main-header .container {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+            .main-nav ul {
+                justify-content: center;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="main-header" id="home">
+        <div class="container">
+            <a href="#home" class="logo font-logo">kaihag.</a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#home">Start</a></li>
+                    <li><a href="#mission">Unsere Mission</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                    <li><a href="imprint.html">Impressum</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <header class="hero font-title">
+            <p class="hero-title-1">software.</p>
+            <p class="hero-title-2">medizin.</p>
+            <p class="hero-title-3">unkompliziert.</p>
+        </header>
+
+        <section id="mission">
+            <div class="container">
+                <h2>Unsere Mission:</h2>
+                <h3 style="margin-bottom: 2rem;">IT für Ärztinnen und Ärzte</h3>
+                <div class="mission-content">
+                    <p>Sie wollen sich niederlassen?</p>
+                    <p style="margin-top: 1rem;">Sie wollen Ihre Praxis auf den neusten Stand bringen?</p>
+                    <p style="margin-top: 1rem;">Wir glauben, dass das nicht kompliziert ist.</p>
+                    <p style="margin-top: 1rem;">IT ist ein integraler Bestandteil einer jeden Arztpraxis. Leider ist sie oft eher Ärgernis als Hilfe im Praxisalltag.</p>
+                    <p>Das geht besser. Wir planen gemeinsam – und stellen Ihnen dann ein stabiles System zur Seite.</p>
+                    <p style="margin-top: 1rem;">Von der Praxissoftware bis zur eigenen Webseite: Alles aus einer Hand und aus einem Guss.</p>
+                    <p>Sie starten in Ihre Selbstständigkeit – unsere Effizienz und Sensibilität für Kosten ebnen Ihnen den Weg.</p>
+                    <p style="margin-top: 1rem;">Wir konzentrieren uns auf Kunden im Raum Lübeck. So können wir eine persönliche Beratung und eine familiäre Atmosphäre gewährleisten.</p>
+                </div>
+            </div>
+        </section>
+
+        <header class="hero mid-luebeck">
+            <p class="hero-title-1">IT in Lübeck und Umgebung</p>
+        </header>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Kontakt</h2>
+                <h3 style="margin-bottom: 2rem;">Haben wir Ihr Interesse geweckt?</h3>
+                <div class="contact-content">
+                    <p>Wir leben eine unkomplizierte und offene Kommunikation.</p>
+                    <p style="margin-top: 1rem;">Schicken Sie uns deshalb ganz einfach eine formlose E-Mail an:</p>
+                    <p style="margin-top: 1rem; font-weight: 700;"><a href="mailto:info@kaihag.com">info@kaihag.com</a></p>
+                    <p style="margin-top: 1rem;">Darin dürfen Sie gerne schon Ihr Vorhaben skizzieren, wenn Sie mögen.</p>
+                    <p style="margin-top: 1rem;">Wir melden uns so schnell wie möglich bei Ihnen.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 kaihag.</p>
+    </footer>
+
+</body>
+</html>
