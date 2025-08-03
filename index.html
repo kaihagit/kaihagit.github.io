@@ -1,83 +1,13 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="it, arztpraxis, software, lübeck, praxissoftware, homepage, arzt, praxis, dienstleistung">
     <title>kaihag.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <style>
-        /* lora-regular - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Lora';
-  font-style: normal;
-  font-weight: 400;
-  src: url('fonts/lora-v36-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-/* lora-italic - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Lora';
-  font-style: italic;
-  font-weight: 400;
-  src: url('fonts/lora-v36-latin-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-/* lora-500 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Lora';
-  font-style: normal;
-  font-weight: 500;
-  src: url('fonts/lora-v36-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-/* lora-500italic - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Lora';
-  font-style: italic;
-  font-weight: 500;
-  src: url('fonts/lora-v36-latin-500italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-/* lora-600 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Lora';
-  font-style: normal;
-  font-weight: 600;
-  src: url('fonts/lora-v36-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-/* lora-600italic - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Lora';
-  font-style: italic;
-  font-weight: 600;
-  src: url('fonts/lora-v36-latin-600italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-/* lora-700 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Lora';
-  font-style: normal;
-  font-weight: 700;
-  src: url('fonts/lora-v36-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-/* lora-700italic - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Lora';
-  font-style: italic;
-  font-weight: 700;
-  src: url('fonts/lora-v36-latin-700italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
         .font-title {
             font-family: "Lora", serif;
             font-optical-sizing: auto;
@@ -299,15 +229,10 @@
             border: 1px solid var(--primary-color);
         }
 
-        .contact-content {
+        .imprint-content {
             max-width: 800px;
             margin: 0 auto;
             text-align: center;
-        }
-
-        .contact-content a {
-            color: var(--primary-color);
-            text-decoration: none;
         }
         
         /* --- Footer --- */
@@ -352,53 +277,28 @@
             <a href="#home" class="logo font-logo">kaihag.</a>
             <nav class="main-nav">
                 <ul>
-                    <li><a href="#home">Start</a></li>
-                    <li><a href="#mission">Unsere Mission</a></li>
-                    <li><a href="#contact">Kontakt</a></li>
-                    <li><a href="imprint.html">Impressum</a></li>
+                    <li><a href="index.html#mission">Mission</a></li>
+                    <li><a href="index.html#contact">Kontakt</a></li>
+                    <li><a href="#imprint">Impressum</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <header class="hero font-title">
-            <p class="hero-title-1">software.</p>
-            <p class="hero-title-2">medizin.</p>
-            <p class="hero-title-3">unkompliziert.</p>
-        </header>
-
-        <section id="mission">
-            <div class="container">
-                <h2>Unsere Mission:</h2>
-                <h3 style="margin-bottom: 2rem;">IT für Ärztinnen und Ärzte</h3>
-                <div class="mission-content">
-                    <p>Sie wollen sich niederlassen?</p>
-                    <p style="margin-top: 1rem;">Sie wollen Ihre Praxis auf den neusten Stand bringen?</p>
-                    <p style="margin-top: 1rem;">Wir glauben, dass das nicht kompliziert ist.</p>
-                    <p style="margin-top: 1rem;">IT ist ein integraler Bestandteil einer jeden Arztpraxis. Leider ist sie oft eher Ärgernis als Hilfe im Praxisalltag.</p>
-                    <p>Das geht besser. Wir planen gemeinsam – und stellen Ihnen dann ein stabiles System zur Seite.</p>
-                    <p style="margin-top: 1rem;">Von der Praxissoftware bis zur eigenen Webseite: Alles aus einer Hand und aus einem Guss.</p>
-                    <p>Sie starten in Ihre Selbstständigkeit – unsere Effizienz und Sensibilität für Kosten ebnen Ihnen den Weg.</p>
-                    <p style="margin-top: 1rem;">Wir konzentrieren uns auf Kunden im Raum Lübeck. So können wir eine persönliche Beratung und eine familiäre Atmosphäre gewährleisten.</p>
-                </div>
-            </div>
-        </section>
-
         <header class="hero mid-luebeck">
-            <p class="hero-title-1">IT in Lübeck und Umgebung</p>
         </header>
 
-        <section id="contact">
+        <section id="imprint">
             <div class="container">
-                <h2>Kontakt</h2>
-                <h3 style="margin-bottom: 2rem;">Haben wir Ihr Interesse geweckt?</h3>
-                <div class="contact-content">
-                    <p>Wir leben eine unkomplizierte und offene Kommunikation.</p>
-                    <p style="margin-top: 1rem;">Schicken Sie uns deshalb ganz einfach eine formlose E-Mail an:</p>
-                    <p style="margin-top: 1rem; font-weight: 700;"><a href="mailto:info@kaihag.com">info@kaihag.com</a></p>
-                    <p style="margin-top: 1rem;">Darin dürfen Sie gerne schon Ihr Vorhaben skizzieren, wenn Sie mögen.</p>
-                    <p style="margin-top: 1rem;">Wir melden uns so schnell wie möglich bei Ihnen.</p>
+                <h2>Impressum</h2>
+                <div class="imprint-content">
+                    <p>kaihag. IT-Solutions</p>
+                    <p>Kai Hagelstein</p>
+                    <p>Johannes-Klöcking-Weg 7, 23568 Lübeck</p>
+                    <p>info@kaihag.com</p>
+                    <p>+49 151 55757932</p>
+                    <p>www.kaihag.com</p>
                 </div>
             </div>
         </section>
